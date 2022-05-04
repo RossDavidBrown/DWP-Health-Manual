@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="../index" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Service phases
+    </h1>
+
+    <p>
+      Where we can break services up into key steps of the overall proces
+    </p>
+
+    <p>
+      These stages may be provided by a number of different providers, but to the user, a service is one continuous set of actions towards their goal regardless of who is providing it.
+    </p>
+
+    <ol class="govuk-list govuk-list--number">
+      <li>Find out.</li>
+      <span class="govuk-hint">Citizen finds out information and ways to get help. Understand options and choose what to apply for.</span><br><br>
+      <li>Apply.</li>
+      <span class="govuk-hint">Citizen fills out and submist application to make a claim and provides evidence.</span><br><br>
+      <li>Decide.</li>
+      <span class="govuk-hint">DWP processes and routes application, if necessary refers to assessment. DWP decides an outcome and informs citizen.</span><br><br>
+      <li>Dispute.</li>
+      <span class="govuk-hint">Citizen may dispute an outcome, leading to Mandatory Reconsideration and possibly Appeal.</span><br><br>
+      <li>Pay.</li>
+      <span class="govuk-hint">Citizen receives award.</span><br><br>
+      <li>Review.</li>
+      <span class="govuk-hint">Udpdates on any change of circumstances or award reviews, as well as support to move on from a particular benefit.</span>
+    </ol>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <img src="/public/images/service-phases.jpeg" alt="An image showing the 6 service phases." width="100%">
+  <div>
+</div>
+
+{% endblock %}
