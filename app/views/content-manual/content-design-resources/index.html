@@ -1,0 +1,89 @@
+{% extends "dwp-layout-big-bar.html" %}
+
+{% block hero_content %}
+  <h1 class="govuk-heading-xl no-margin">Content Design resources</h1>
+  <p class="big-bar__description">Principles, standards and resources for Content Designers.</p>
+
+  <p class="big-bar__description">
+    <!-- <a href="principles">See our user centred design principles</a> -->
+  </p>
+
+{% endblock %}
+
+{% block content %}
+{{ govukBackLink({ text: 'Back', href: 'javascript:history.back()' }) }}
+<main id="content" role="main">
+ <div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+
+     <div class="govuk-inset-text">These links will open in a new tab.</div>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://www.gov.uk/service-manual">The Service Manual</a>
+     </h2>
+     <p class="govuk-body">The central GDS guidebook for all things about making services in government.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://www.gov.uk/service-manual/service-standard" rel="noreferrer noopener" target="_blank">Service Standards</a>
+     </h2>
+     <p class="govuk-body">Part of the Service Manual. The 14 standards that a service needs to meet, and what they are measured against in service assessments.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://accessibility-manual.dwp.gov.uk/guidance-for-your-job-role/content-designer" rel="noreferrer noopener" target="_blank">Accessibility guidance for Content Designers</a>
+     </h2>
+     <p class="govuk-body">Part of the DWP Accessibility Manual. Guidance to help you create content that meets accessibility standards.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://design-system.service.gov.uk" rel="noreferrer noopener" target="_blank">GOV.UK Design System</a>
+     </h2>
+     <p class="govuk-body">Styles, components and patterns used in government digital services.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://dwp-design-manual.herokuapp.com" rel="noreferrer noopener" target="_blank">DWP User Centred Design Manual</a>
+     </h2>
+     <p class="govuk-body">The UCD manual includes links to our style guides, the DWP Design System, and more guidance and tools for content designers.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://dwp-design-manual.herokuapp.com" rel="noreferrer noopener" target="_blank">Find a content designer</a>
+     </h2>
+     <p class="govuk-body">A list of Content Designers around DWP. What they work on, where they are based, and their email contacts.</p>
+     <br>
+
+     <h2 class="heading-medium">
+       <a href="https://dwpdigital.atlassian.net/wiki/spaces/CDC/pages/25071845679/Content+design+community+show+and+tells" rel="noreferrer noopener" target="_blank">Content Design community show and tells</a>
+     </h2>
+     <p class="govuk-body">The timetable and agenda for Content Design community show and tell events.</p>
+     <br>
+
+     <h2 class="govuk-heading-m">
+       Useful Slack channels
+     </h2>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        #content-design
+      </li>
+      <li>
+        #health-content-design
+      </li>
+      <li>
+        #health-design-crits
+      </li>
+      <li>
+        #health-design-team
+      </li>
+      <li>
+        #help-macbook
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+{% endblock %}
