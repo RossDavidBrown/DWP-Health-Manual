@@ -1,55 +1,65 @@
+{% extends "dwp-layout-big-bar.html" %}
 
-{% extends "layout.html" %}
+{% block hero_content %}
+  <h1 class="govuk-heading-xl no-margin">DWP Health Manual</h1>
+  <p class="big-bar__description">We deliver consistent, usable Health and Disability services that put people first.</p>
 
-{% block pageTitle %}
-  Home – GOV.UK Prototype Kit
+  <p class="big-bar__description">
+    <!-- <a href="principles">See our user centred design principles</a> -->
+  </p>
+
 {% endblock %}
 
 {% block content %}
 
+ <main id="content" role="main">
+
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Prototype
-      </h1>
-    </div>
 
-    <div class="govuk-grid-column-full">
-      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="heading-medium">
+      <a href="how-we-communicate">How we communicate</a>
+    </h2>
+    <p class="govuk-body">The language we use in DWP Health to talk with our teams, our stakeholders and our external users.</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="heading-medium">
+    <a href="">Design</a>
+    </h2>
+    <p class="govuk-body">Design strategy, standards and resources for Interaction and Content Designers.</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="heading-medium">
+      <a href="">Research</a>
+    </h2>
+    <p class="govuk-body">Research principles, standards, libraries, and resources for User Researchers.</p>
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="heading-small">
+      <a href="">Engineering</a>
+    </h2>
+    <p class="govuk-body">Engineering principles, standards, tools, and resources for Engineering professionals.</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="heading-medium">
+    <a href="">Teams</a>
+    </h2>
+    <p class="govuk-body">Team makeup, show and tell timetables, documentation, etc.</p>
+  </div>
+
+</div>
 
 
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                Taxonomy version 1
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-            <span class="govuk-tag govuk-tag--red">May 2022</span><br><br>
-            <p>First iteration - an example of how a taxonomy might look as part of a DWP Health Manual tool.</p>
-            <a href="taxonomy/index.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">Start prototype</a>
-          </div>
-        </div>
 
-        <div class="govuk-accordion__section ">
-          <div class="govuk-accordion__section-header">
-            <h2 class="govuk-accordion__section-heading">
-              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                Manual view version 1
-              </span>
-            </h2>
-          </div>
-          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-            <span class="govuk-tag govuk-tag--red">May 2022</span><br><br>
-            <p>First iteration - an example of how a DWP Health Manual tool might look.</p>
-            <a href="manual-view/" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">Start prototype</a>
-          </div>
-        </div>
 
-      </div>
-      </div>
-    </div>
+ </main>
 
 {% endblock %}

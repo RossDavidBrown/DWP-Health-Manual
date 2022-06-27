@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Prototype
+      </h1>
+    </div>
+
+    <div class="govuk-grid-column-full">
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Taxonomy version 1
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <span class="govuk-tag govuk-tag--red">May 2022</span><br><br>
+            <p>First iteration - an example of how a taxonomy might look as part of a DWP Health Manual tool.</p>
+            <a href="taxonomy/index.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">Start prototype</a>
+          </div>
+        </div>
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Manual view version 1
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <span class="govuk-tag govuk-tag--red">May 2022</span><br><br>
+            <p>First iteration - an example of how a DWP Health Manual tool might look.</p>
+            <a href="manual-view/" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">Start prototype</a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+{% endblock %}
